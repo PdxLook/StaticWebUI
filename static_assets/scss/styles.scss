@@ -1,0 +1,12 @@
+// css初始化
+@import "root/_normalize.scss";
+
+.test-unocss-div {
+  @apply text-center my-0;
+}
+
+.test-div {
+  padding: 4px;
+  margin: 4px;
+  background-color: antiquewhite;
+}
