@@ -1,0 +1,8 @@
+.MP3
+.MP4
+.avi
+.py
+.DS_Store
+dist
+node_modules/
+assets/css/

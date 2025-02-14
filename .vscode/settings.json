@@ -41,7 +41,18 @@
     "pages.json": "jsonc", // pages.json 可以写注释
     "manifest.json": "jsonc" // manifest.json 可以写注释
   },
-  "cSpell.words": ["commitlint", "iconfont", "loaing", "showkef", "tabbar"],
+  "cSpell.words": [
+    "commitlint",
+    "Heiti",
+    "iconfont",
+    "loaing",
+    "showkef",
+    "Simsun",
+    "tabbar",
+    "textareas",
+    "unocss",
+    "Yahei"
+  ],
   "typescript.tsdk": "node_modules\\typescript\\lib",
   // 控制相关文件嵌套展示
   "explorer.fileNesting.enabled": true,
