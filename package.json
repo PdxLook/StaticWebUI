@@ -1,8 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "dev:unocss": "unocss \"views/*.html\" -w -o assets/css/unocss.css",
-    "dev:mincss": "unocss \"views/*.html\" -m -o assets/css/unocss.css",
+    "dev:unocss": "unocss \"views/*.html\" \"assets/js/*.js\" -w -o assets/css/unocss.css",
+    "dev:mincss": "unocss \"views/*.html\" \"assets/js/*.js\" -m -o assets/css/unocss.css",
     "dev:css": "postcss static_assets/scss/styles.scss -o assets/css/styles.css",
     "watch:css": "chokidar \"static_assets/scss/**/*.scss\" -c \"pnpm run dev:css\"",
     "dev": "concurrently \"pnpm run dev:unocss\" \"pnpm run watch:css\"",
@@ -12,17 +12,19 @@
   "devDependencies": {
     "@unocss/cli": "^65.4.3",
     "@unocss/postcss": "^65.4.3",
+    "concurrently": "^8.0.0",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.5.3",
     "postcss-import": "^16.1.0",
-    "unocss": "^65.4.3",
-    "concurrently": "^8.0.0"
+    "postcss-preset-env": "^10.1.5",
+    "postcss-scss": "^4.0.9",
+    "unocss": "^65.4.3"
   },
   "dependencies": {
     "@unocss/reset": "^65.4.3",
     "chokidar-cli": "^3.0.0",
-    "cssnano": "^7.0.6",
     "nodemon": "^3.1.9",
     "postcss-cli": "^11.0.0",
-    "postcss-scss": "^4.0.9",
     "sass": "^1.85.0"
   }
 }
