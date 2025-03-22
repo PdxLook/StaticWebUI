@@ -11,6 +11,11 @@ export default {
       path: ["static_assets/scss"],
     }),
     postcssPresetEnv({
+      autoprefixer: {
+        grid: "autoplace", // 兼容 CSS Grid 布局
+        flexbox: "no-2009", // 兼容旧版 flexbox 语法
+      },
+      stage: 3,
       features: {
         "nesting-rules": true,
         "custom-properties": true,
